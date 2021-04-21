@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Engagedly API" verbose="1" parallel="tests"
+       thread-count="3">
+
+    <listeners>
+        <listener class-name="qa.api.engagedly.listeners.AllureReportListener" />
+    </listeners>
+
+    <test name="Rest API regression Test" parallel="classes"
+          thread-count="3">
+        <classes>
+            <class name="qa.api.engagedly.tests.GetUserTest" />
+            <class name="qa.api.engagedly.tests.GetIngurAPITest" />
+        </classes>
+    </test>
+</suite>
