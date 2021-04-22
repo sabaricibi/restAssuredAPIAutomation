@@ -45,7 +45,7 @@ public class GetIngurAPITest {
         System.out.println(response.statusCode());
     }
 
-    @Test
+    @Test(enabled = false)
     public void uploadImageTest(){
         Map<String, String> clientIDMap = Token.getClientId();
         Map<String, String> formMap = new HashMap<String, String>();
