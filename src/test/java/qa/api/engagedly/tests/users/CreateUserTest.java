@@ -1,4 +1,4 @@
-package qa.api.engagedly.tests;
+package qa.api.engagedly.tests.users;
 
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeMethod;

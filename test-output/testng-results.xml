@@ -1,55 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Engagedly API" duration-ms="15757" started-at="2021-04-22T04:33:42Z" finished-at="2021-04-22T04:33:58Z">
+  <suite name="Engagedly API" duration-ms="5679" started-at="2021-04-23T02:48:45Z" finished-at="2021-04-23T02:48:51Z">
     <groups>
     </groups>
-    <test name="Rest API regression Test" duration-ms="15757" started-at="2021-04-22T04:33:42Z" finished-at="2021-04-22T04:33:58Z">
-      <class name="qa.api.engagedly.tests.GetUserTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.GetUserTest@4f2c9ba6]" name="setUp" is-config="true" duration-ms="59" started-at="2021-04-22T04:33:42Z" finished-at="2021-04-22T04:33:42Z">
+    <test name="Performance API Test" duration-ms="5679" started-at="2021-04-23T02:48:45Z" finished-at="2021-04-23T02:48:51Z">
+      <class name="qa.api.engagedly.tests.performance.GetTemplate">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.performance.GetTemplate@44828f6b]" name="setUp" is-config="true" duration-ms="33" started-at="2021-04-23T02:48:45Z" finished-at="2021-04-23T02:48:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getAllUsersTest()[pri:0, instance:qa.api.engagedly.tests.GetUserTest@4f2c9ba6]" name="getAllUsersTest" duration-ms="7431" started-at="2021-04-22T04:33:43Z" finished-at="2021-04-22T04:33:50Z">
+        <test-method status="PASS" signature="getTemplateByID()[pri:0, instance:qa.api.engagedly.tests.performance.GetTemplate@44828f6b]" name="getTemplateByID" duration-ms="5347" started-at="2021-04-23T02:48:46Z" finished-at="2021-04-23T02:48:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllUsersTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.GetUserTest@4f2c9ba6]" name="setUp" is-config="true" duration-ms="4" started-at="2021-04-22T04:33:50Z" finished-at="2021-04-22T04:33:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getUserWithParam()[pri:0, instance:qa.api.engagedly.tests.GetUserTest@4f2c9ba6]" name="getUserWithParam" duration-ms="2726" started-at="2021-04-22T04:33:50Z" finished-at="2021-04-22T04:33:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserWithParam -->
-      </class> <!-- qa.api.engagedly.tests.GetUserTest -->
-      <class name="qa.api.engagedly.tests.GetIngurAPITest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="setUp" is-config="true" duration-ms="7130" started-at="2021-04-22T04:33:42Z" finished-at="2021-04-22T04:33:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getAccountBlockStatusTest()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="getAccountBlockStatusTest" duration-ms="1550" started-at="2021-04-22T04:33:49Z" finished-at="2021-04-22T04:33:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccountBlockStatusTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="setUp" is-config="true" duration-ms="954" started-at="2021-04-22T04:33:51Z" finished-at="2021-04-22T04:33:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getAccountImagesTest()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="getAccountImagesTest" duration-ms="1398" started-at="2021-04-22T04:33:52Z" finished-at="2021-04-22T04:33:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccountImagesTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="setUp" is-config="true" duration-ms="1145" started-at="2021-04-22T04:33:53Z" finished-at="2021-04-22T04:33:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="uploadImageTest()[pri:0, instance:qa.api.engagedly.tests.GetIngurAPITest@4e28bdd1]" name="uploadImageTest" duration-ms="3435" started-at="2021-04-22T04:33:54Z" finished-at="2021-04-22T04:33:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadImageTest -->
-      </class> <!-- qa.api.engagedly.tests.GetIngurAPITest -->
-    </test> <!-- Rest API regression Test -->
+        </test-method> <!-- getTemplateByID -->
+      </class> <!-- qa.api.engagedly.tests.performance.GetTemplate -->
+    </test> <!-- Performance API Test -->
   </suite> <!-- Engagedly API -->
 </testng-results>

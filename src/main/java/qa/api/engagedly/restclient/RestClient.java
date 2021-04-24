@@ -3,12 +3,16 @@ package qa.api.engagedly.restclient;
 import io.restassured.RestAssured;
 import io.restassured.config.EncoderConfig;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import qa.api.engagedly.util.TestUtil;
 
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 
@@ -37,9 +41,25 @@ public class RestClient {
             addRequestPayload(request,pojoObj);
             return getResponse("POST", request, basePath);
         }
-
         return null;
+    }
 
+    public static Response doPut(String contentType, String baseURI, String basePath, Map<String, String> token, Map<String, String> paramsMap, boolean log, Object pojoObj){
+        if(setBaseURI(baseURI)) {
+            RequestSpecification request = createRequest(contentType, token, paramsMap, log);
+            addRequestPayload(request,pojoObj);
+            return getResponse("PUT", request, basePath);
+        }
+        return null;
+    }
+
+    public static Response doDelete(String contentType, String baseURI, String basePath, Map<String, String> token, Map<String, String> paramsMap, boolean log) {
+        if(setBaseURI(baseURI)) {
+            RestClient.setBaseURI(baseURI);
+            RequestSpecification request = createRequest(contentType, token, paramsMap, log);
+            return RestClient.getResponse("DELETE", request, basePath);
+        }
+        return null;
     }
 
     private static void addRequestPayload(RequestSpecification request, Object obj) {
@@ -134,6 +154,35 @@ public class RestClient {
                 break;
         }
         return response;
+    }
+
+
+    public static JsonPath getJsonPath(Response response) {
+        return response.jsonPath();
+    }
+
+    public static int getStatusCode(Response response) {
+        return response.getStatusCode();
+    }
+
+    public static String getHeaderValue(Response response, String headerName) {
+        return response.getHeader(headerName);
+    }
+
+    public static int getResponseHeaderCount(Response response) {
+        Headers headers = response.getHeaders();
+        return headers.size();
+    }
+
+    public static List<Header> getResponseHeaders(Response response) {
+        Headers headers = response.getHeaders();
+        List<Header> headerList = headers.asList();
+        return headerList;
+    }
+
+    public static void getPrettyResponsePrint(Response response) {
+        System.out.println("========response String in pretty format======");
+        response.prettyPrint();
     }
 
 

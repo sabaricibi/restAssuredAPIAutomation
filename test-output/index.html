@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +102,7 @@
                     <div class="method-list-content passed suite-Engagedly_API">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.GetIngurAPITest" hash-for-method="getAccountBlockStatusTest">getAccountBlockStatusTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.GetIngurAPITest" hash-for-method="getAccountImagesTest">getAccountImagesTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.GetUserTest" hash-for-method="getAllUsersTest">getAllUsersTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.GetUserTest" hash-for-method="getUserWithParam">getUserWithParam</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.GetIngurAPITest" hash-for-method="uploadImageTest">uploadImageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Engagedly_API" title="qa.api.engagedly.tests.performance.GetTemplate" hash-for-method="getTemplateByID">getTemplateByID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Engagedly_API -->
@@ -140,50 +120,14 @@
           <div class="suite-Engagedly_API-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qa.api.engagedly.tests.GetUserTest</span>
+              <span class="class-name">qa.api.engagedly.tests.performance.GetTemplate</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getAllUsersTest">
-                  </a> <!-- getAllUsersTest -->
-                  <span class="method-name">getAllUsersTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getUserWithParam">
-                  </a> <!-- getUserWithParam -->
-                  <span class="method-name">getUserWithParam</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Engagedly_API-class-passed -->
-          <div class="suite-Engagedly_API-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">qa.api.engagedly.tests.GetIngurAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAccountBlockStatusTest">
-                  </a> <!-- getAccountBlockStatusTest -->
-                  <span class="method-name">getAccountBlockStatusTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAccountImagesTest">
-                  </a> <!-- getAccountImagesTest -->
-                  <span class="method-name">getAccountImagesTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="uploadImageTest">
-                  </a> <!-- uploadImageTest -->
-                  <span class="method-name">uploadImageTest</span>
+                  <a name="getTemplateByID">
+                  </a> <!-- getTemplateByID -->
+                  <span class="method-name">getTemplateByID</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,12 +145,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;qa.api.engagedly.listeners.AllureReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;3&quot; name=&quot;Rest API regression Test&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Performance API Test&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qa.api.engagedly.tests.GetUserTest&quot;/&gt;
-      &lt;class name=&quot;qa.api.engagedly.tests.GetIngurAPITest&quot;/&gt;
+      &lt;class name=&quot;qa.api.engagedly.tests.performance.GetTemplate&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Rest API regression Test --&gt;
+  &lt;/test&gt; &lt;!-- Performance API Test --&gt;
 &lt;/suite&gt; &lt;!-- Engagedly API --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Rest API regression Test (2 classes)</span>
+                <span class="test-name">Performance API Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,32 +187,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getAllUsersTest')
-data.setCell(0, 2, 'qa.api.engagedly.tests.GetUserTest')
-data.setCell(0, 3, 7431);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'uploadImageTest')
-data.setCell(1, 2, 'qa.api.engagedly.tests.GetIngurAPITest')
-data.setCell(1, 3, 3435);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getUserWithParam')
-data.setCell(2, 2, 'qa.api.engagedly.tests.GetUserTest')
-data.setCell(2, 3, 2726);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getAccountBlockStatusTest')
-data.setCell(3, 2, 'qa.api.engagedly.tests.GetIngurAPITest')
-data.setCell(3, 3, 1550);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getAccountImagesTest')
-data.setCell(4, 2, 'qa.api.engagedly.tests.GetIngurAPITest')
-data.setCell(4, 3, 1398);
+data.setCell(0, 1, 'getTemplateByID')
+data.setCell(0, 2, 'qa.api.engagedly.tests.performance.GetTemplate')
+data.setCell(0, 3, 5347);
 window.suiteTableData['Engagedly_API']= { tableData: data, tableDiv: 'times-div-Engagedly_API'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Engagedly_API">
               </div> <!-- times-div-Engagedly_API -->
             </div> <!-- times-div -->
@@ -295,58 +222,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qa.api.engagedly.tests.GetIngurAPITest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">qa.api.engagedly.tests.GetUserTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">qa.api.engagedly.tests.performance.GetTemplate</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">getAllUsersTest</span>
-                <span class="method-start">445 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">qa.api.engagedly.tests.GetIngurAPITest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getAccountBlockStatusTest</span>
-                <span class="method-start">7138 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">qa.api.engagedly.tests.GetUserTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">7899 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getUserWithParam</span>
-                <span class="method-start">7910 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">qa.api.engagedly.tests.GetIngurAPITest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">8696 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getAccountImagesTest</span>
-                <span class="method-start">9655 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11063 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">uploadImageTest</span>
-                <span class="method-start">12217 ms</span>
+                <span class="method-name">getTemplateByID</span>
+                <span class="method-start">237 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

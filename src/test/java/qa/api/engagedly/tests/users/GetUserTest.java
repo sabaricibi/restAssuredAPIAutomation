@@ -1,6 +1,10 @@
-package qa.api.engagedly.tests;
+package qa.api.engagedly.tests.users;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import qa.api.engagedly.restclient.RestClient;
@@ -22,15 +26,21 @@ public class GetUserTest {
         paramKeys.put("ClientKey", ClientKey);
         paramKeys.put("SecretKey", SecretKey);
     }
+
     @Test
+    @Description("get all the users in the org")
+    @Severity(SeverityLevel.CRITICAL)
     public void getAllUsersTest(){
         Response response = RestClient.doGet("JSON", baseURI, basePath, paramKeys, null, true);
-        System.out.println(response.getStatusCode());
-        System.out.println(response.prettyPrint());
+        Assert.assertEquals(RestClient.getStatusCode(response), 200);
+        RestClient.getPrettyResponsePrint(response);
+        System.out.println(response.time());
 
     }
 
     @Test
+    @Description("test case name: verify get user api with existing user...")
+    @Severity(SeverityLevel.CRITICAL)
     public void getUserWithParam(){
 
         Map<String, String> params = new HashMap<String, String>();
@@ -40,5 +50,6 @@ public class GetUserTest {
         Response response = RestClient.doGet("JSON", baseURI, basePath,paramKeys , params, true);
         System.out.println(response.getStatusCode());
         System.out.println(response.prettyPrint());
+
     }
 }

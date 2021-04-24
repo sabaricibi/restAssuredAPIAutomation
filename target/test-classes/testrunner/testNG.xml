@@ -8,11 +8,10 @@
         <listener class-name="qa.api.engagedly.listeners.AllureReportListener" />
     </listeners>
 
-    <test name="Rest API regression Test" parallel="classes"
+    <test name="Performance API Test" parallel="classes"
           thread-count="3">
         <classes>
-            <class name="qa.api.engagedly.tests.GetUserTest" />
-            <class name="qa.api.engagedly.tests.GetIngurAPITest" />
+            <class name="qa.api.engagedly.tests.performance.GetTemplate" />
         </classes>
     </test>
 </suite>
