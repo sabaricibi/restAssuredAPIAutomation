@@ -27,9 +27,11 @@ import java.util.Map;
 public class RestClient {
 
     //engagedly doGet
-    public static Response doGet(String contentType, String baseURI, String basePath, Map<String, String> token, Map<String, String> paramsMap, boolean log){
+    public static Response doGet(String contentType, String baseURI, String basePath, Map<String, String> token, Map<String, String> paramsMap, String pathParam, boolean log){
         if(setBaseURI(baseURI)) {
             RequestSpecification request = createRequest(contentType, token, paramsMap, log);
+            if(!(pathParam == null))
+                basePath = basePath+pathParam;
             return getResponse("GET", request, basePath);
         }
         return null;

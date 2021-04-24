@@ -31,7 +31,7 @@ public class GetUserTest {
     @Description("get all the users in the org")
     @Severity(SeverityLevel.CRITICAL)
     public void getAllUsersTest(){
-        Response response = RestClient.doGet("JSON", baseURI, basePath, paramKeys, null, true);
+        Response response = RestClient.doGet("JSON", baseURI, basePath, paramKeys, null, null, true);
         Assert.assertEquals(RestClient.getStatusCode(response), 200);
         RestClient.getPrettyResponsePrint(response);
         System.out.println(response.time());
@@ -47,7 +47,7 @@ public class GetUserTest {
         params.put("first_name", "john");
         params.put("gender", "male");
 
-        Response response = RestClient.doGet("JSON", baseURI, basePath,paramKeys , params, true);
+        Response response = RestClient.doGet("JSON", baseURI, basePath,paramKeys , params, null,true);
         System.out.println(response.getStatusCode());
         System.out.println(response.prettyPrint());
 

@@ -32,7 +32,7 @@ public class GetIngurAPITest {
     public void getAccountBlockStatusTest(){
         Map<String, String> accessToken = Token.getAuthToken();
         Response response = RestClient.doGet(null, baseURI, "/account/v1/"+accountUserName+"/block",
-                accessToken, null, true);
+                accessToken, null, null,true);
         System.out.println(response.prettyPrint());
     }
 
@@ -40,7 +40,7 @@ public class GetIngurAPITest {
     public void getAccountImagesTest(){
         Map<String, String> accessToken = Token.getAuthToken();
         Response response = RestClient.doGet(null, baseURI, "/3/account/me/images",
-                accessToken, null, true);
+                accessToken, null, null, true);
         System.out.println(response.prettyPrint());
         System.out.println(response.statusCode());
     }
