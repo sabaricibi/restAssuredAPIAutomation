@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Engagedly API" verbose="1" parallel="tests"
+<suite name="Com API" verbose="1" parallel="tests"
        thread-count="3">
 
     <listeners>
-        <listener class-name="qa.api.engagedly.listeners.AllureReportListener" />
+        <listener class-name="qa.api.com.listeners.AllureReportListener" />
     </listeners>
 
     <test name="Performance API Test" parallel="classes"
           thread-count="3">
         <classes>
-            <class name="qa.api.engagedly.tests.performance.GetTemplate" />
+            <class name="qa.api.com.tests.performance.GetTemplate" />
         </classes>
     </test>
 </suite>

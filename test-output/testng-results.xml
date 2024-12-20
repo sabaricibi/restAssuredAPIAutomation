@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Engagedly API" duration-ms="6417" started-at="2021-04-24T03:39:22Z" finished-at="2021-04-24T03:39:29Z">
+  <suite name="com API" duration-ms="6417" started-at="2021-04-24T03:39:22Z" finished-at="2021-04-24T03:39:29Z">
     <groups>
     </groups>
     <test name="Performance API Test" duration-ms="6417" started-at="2021-04-24T03:39:22Z" finished-at="2021-04-24T03:39:29Z">
-      <class name="qa.api.engagedly.tests.performance.GetTemplate">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.engagedly.tests.performance.GetTemplate@26a4842b]" name="setUp" is-config="true" duration-ms="51" started-at="2021-04-24T03:39:22Z" finished-at="2021-04-24T03:39:22Z">
+      <class name="qa.api.com.tests.performance.GetTemplate">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.api.com.tests.performance.GetTemplate@26a4842b]" name="setUp" is-config="true" duration-ms="51" started-at="2021-04-24T03:39:22Z" finished-at="2021-04-24T03:39:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="getTemplateByID()[pri:0, instance:qa.api.engagedly.tests.performance.GetTemplate@26a4842b]" name="getTemplateByID" duration-ms="5992" started-at="2021-04-24T03:39:23Z" finished-at="2021-04-24T03:39:29Z">
+        <test-method status="FAIL" signature="getTemplateByID()[pri:0, instance:qa.api.com.tests.performance.GetTemplate@26a4842b]" name="getTemplateByID" duration-ms="5992" started-at="2021-04-24T03:39:23Z" finished-at="2021-04-24T03:39:29Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [422]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:652)
 at org.testng.Assert.assertEquals(Assert.java:662)
-at qa.api.engagedly.tests.performance.GetTemplate.getTemplateByID(GetTemplate.java:57)
+at qa.api.com.tests.performance.GetTemplate.getTemplateByID(GetTemplate.java:57)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,7 +44,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTemplateByID -->
-      </class> <!-- qa.api.engagedly.tests.performance.GetTemplate -->
+      </class> <!-- qa.api.com.tests.performance.GetTemplate -->
     </test> <!-- Performance API Test -->
-  </suite> <!-- Engagedly API -->
+  </suite> <!-- com API -->
 </testng-results>
